@@ -53,7 +53,10 @@ public final class HackStyle {
         int fill = !enabled ? BTN_OFF : hovered ? BTN_HOVER : BTN;
         ctx.fill(x, y, x + w, y + h, fill);
         int border = !enabled ? 0xFF2A2F3C : hovered ? ACCENT : 0xFF2E3A52;
-        ctx.drawBorder(x, y, w, h, border);
+        ctx.fill(x, y, x + w, y + 1, border);
+ctx.fill(x, y + h - 1, x + w, y + h, border);
+ctx.fill(x, y, x + 1, y + h, border);
+ctx.fill(x + w - 1, y, x + w, y + h, border);
         if (enabled) ctx.fill(x, y, x + 2, y + h, hovered ? rainbow(y / 300f) : ACCENT);
     }
 
