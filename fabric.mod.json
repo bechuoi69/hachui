@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "hackui",
+  "version": "1.0.0",
+  "name": "Hack UI",
+  "description": "Doi giao dien Tuy chon thanh kieu hacked client. Chi doi giao dien.",
+  "license": "MIT",
+  "environment": "client",
+  "mixins": ["hackui.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11"
+  }
+}
